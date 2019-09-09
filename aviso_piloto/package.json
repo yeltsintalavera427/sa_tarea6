@@ -1,0 +1,26 @@
+{
+  "name": "aviso_piloto",
+  "version": "1.0.0",
+  "description": "servicio para avisar a un piloto sobre una peticion de viaje",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Doki1992/tarea2.git"
+  },
+  "keywords": [
+    "aviso",
+    "piloto"
+  ],
+  "author": "Mike Gutierrez-201013266",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Doki1992/tarea2/issues"
+  },
+  "homepage": "https://github.com/Doki1992/tarea2#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "solicitud_cliente",
+  "version": "1.0.0",
+  "description": "microservicio para solicitar servicios de carros de uber ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "servicio1"
+  ],
+  "author": "Mike Gutierrez-201013266",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
