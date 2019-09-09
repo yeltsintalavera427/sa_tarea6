@@ -1,0 +1,25 @@
+{
+  "name": "tarea6",
+  "version": "1.0.0",
+  "description": "## Servicio de solicitud de carros uber ### Listado de servicios que ofrece esta api * Mostrar todos los ubers, esta funcion muestra todos los ubers disponibles * Obtener ubicacion este servicio muestra la zona en la que se encuentra el uber",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeltsintalavera427/sa_tarea6.git"
+  },
+  "author": "Mike Talavera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yeltsintalavera427/sa_tarea6/issues"
+  },
+  "homepage": "https://github.com/yeltsintalavera427/sa_tarea6#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^6.0.0",
+    "gulp-nodemon": "^2.4.2",
+    "gulp-zip": "^5.0.0"
+  }
+}
