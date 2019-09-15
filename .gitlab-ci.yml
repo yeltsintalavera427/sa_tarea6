@@ -1,7 +1,11 @@
 image: node:latest
 
 before_script:
-  - npm install gulp
+  - npm install --global gulp-cli
+  - npm install --global gulp
+  - npm install gulp-jasmine
+  - npm install gulp-zip
+  - npm install gulp-eslint
 
 job:
   script:
