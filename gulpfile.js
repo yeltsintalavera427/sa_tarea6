@@ -3,8 +3,9 @@ const eslint = require('gulp-eslint');
 gulp         = require('gulp');
 var nodemon  = require('gulp-nodemon');
 const zip    = require('gulp-zip');
-
-
+var mocha    = require('gulp-mocha');
+var istanbul = require('gulp-istanbul')
+const jasmine = require('gulp-jasmine');
 function defaultTask(cb) {
   // place code for your default task here
   cb();
@@ -77,6 +78,15 @@ gulp.task('lint', function(){
     })).pipe(eslint.formatEach('compact', process.stderr));
 });
 
+
+gulp.task('test', function (){
+    return gulp.src('spec/**/*.js')
+        // gulp-jasmine works on filepaths so you can't have any plugins before it
+        .pipe(jasmine())
+	}
+);
+
+
 gulp.task("build", function (){
 	return gulp.src(["**/**", "!**/node_modules"])
 	.pipe(zip("archive.zip"))
@@ -84,4 +94,4 @@ gulp.task("build", function (){
 })
 
 
-gulp.task('build', gulp.series('lint', 'build'));
+gulp.task('build', gulp.series('lint', 'test', 'build'));
